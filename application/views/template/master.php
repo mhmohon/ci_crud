@@ -17,10 +17,10 @@
 	<!-- end: Mobile Specific -->
 	
 	<!-- start: CSS -->
-	<link id="bootstrap-style" href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link id="base-style" href="assets/css/style.css" rel="stylesheet">
-	<link id="base-style-responsive" href="assets/css/style-responsive.css" rel="stylesheet">
+	<link id="bootstrap-style" href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
+	<link href="<?= base_url('assets/css/bootstrap-responsive.min.css') ?>" rel="stylesheet">
+	<link id="base-style" href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
+	<link id="base-style-responsive" href="<?= base_url('assets/css/style-responsive.css') ?>" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- end: CSS -->
 	
@@ -393,21 +393,21 @@
 	
 	<!-- start: JavaScript-->
 
-		<script src="assets/js/jquery-1.9.1.min.js"></script>
-	<script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
+		<script src="<?= base_url('assets/js/jquery-1.9.1.min.js') ?>"></script>
+	<script src="<?= base_url('assets/js/jquery-migrate-1.0.0.min.js') ?>"></script>
 	
-		<script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
+		<script src="<?= base_url('assets/js/jquery-ui-1.10.0.custom.min.js') ?>"></script>
 	
-		<script src="assets/js/jquery.ui.touch-punch.js"></script>
+		<script src="<?= base_url('assets/js/jquery.ui.touch-punch.js') ?>"></script>
 	
-		<script src="assets/js/modernizr.js"></script>
+		<script src="<?= base_url('assets/js/modernizr.js') ?>"></script>
 	
-		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 	
-		<script src="assets/js/jquery.cookie.js"></script>
+		<script src="<?= base_url('assets/js/jquery.cookie.js') ?>"></script>
 	
 
-		<script src="assets/js/custom.js"></script>
+		<script src="<?= base_url('assets/js/custom.js') ?>"></script>
 	<!-- end: JavaScript-->
 	
 </body>

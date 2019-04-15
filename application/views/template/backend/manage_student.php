@@ -12,24 +12,30 @@
             <table class="table table-striped table-bordered bootstrap-datatable datatable">
                 <thead>
                     <tr>
-                        <th>Username</th>
-                        <th>Date registered</th>
-                        <th>Role</th>
+                        <th>Sl</th>
+                        <th>Full Name</th>
+                        <th>Phone number</th>
+                        <th>Roll</th>
                         <th>Status</th>
                         <th>Actions</th>
                     </tr>
                 </thead>   
                 <tbody>
+
+                <?php 
+                    foreach($all_students as $key=>$student):
+                ?>
                 <tr>
-                    <td>Ajith Hristijan</td>
-                    <td class="center">2012/03/01</td>
-                    <td class="center">Member</td>
+                    <td><?= $key+1 ?></td>
+                    <td><?= $student->name ?></td>
+                    <td class="center"><?= $student->phone ?></td>
+                    <td class="center"><?= $student->roll ?></td>
                     <td class="center">
                         <span class="label label-warning">Pending</span>
                     </td>
                     <td class="center">
                         
-                        <a class="btn btn-info" href="#">
+                        <a class="btn btn-info" href="<?= base_url("edit-student/$student->id")?>">
                             <i class="halflings-icon white edit"></i>                                            
                         </a>
                         <a class="btn btn-danger" href="#">
@@ -38,6 +44,9 @@
                         </a>
                     </td>
                 </tr>
+
+                <?php endforeach; ?>
+
                 </tbody>
             </table>            
         </div>

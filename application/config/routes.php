@@ -10,3 +10,5 @@ $route['login'] = 'welcome/dashboard';
 $route['manage-student'] = 'students/index';
 $route['add-student'] = 'students/create';
 $route['save-student'] = 'students/save';
+$route['edit-student/(.+)'] = 'students/edit/$1';
+$route['update-student/(.+)'] = 'students/update/$1';
